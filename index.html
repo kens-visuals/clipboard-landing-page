@@ -21,40 +21,224 @@
     <title>Frontend Mentor | Clipboard Landing Page</title>
   </head>
   <body>
-    A history of everything you copy Clipboard allows you to track and organize
-    everything you copy. Instantly access your clipboard on all your devices.
-    Download for iOS Download for Mac Keep track of your snippets Clipboard
-    instantly stores any item you copy in the cloud, meaning you can access your
-    snippets immediately on all your devices. Our Mac and iOS apps will help you
-    organize everything. Quick Search Easily search your snippets by content,
-    category, web address, application, and more. iCloud Sync Instantly saves
-    and syncs snippets across all your devices. Complete History Retrieve any
-    snippets from the first moment you started using the app. Access Clipboard
-    anywhere Whether you’re on the go, or at your computer, you can access all
-    your Clipboard snippets in a few simple clicks. Supercharge your workflow
-    We’ve got the tools to boost your productivity. Create blacklists Ensure
-    sensitive information never makes its way to your clipboard by excluding
-    certain sources. Plain text snippets Remove unwanted formatting from copied
-    text for a consistent look. Sneak preview Quick preview of all snippets on
-    your Clipboard for easy access. Clipboard for iOS and Mac OS Available for
-    free on the App Store. Download for Mac or iOS, sync with iCloud and you’re
-    ready to start adding to your clipboard. Download for iOS Download for Mac
-    FAQs Contact Us Privacy Policy Press Kit Install Guide
+    <header class="header">
+      <div class="header__container">
+        <img src="./images/logo.svg" alt="copy" class="header__logo" />
 
-    <footer class="attribution">
-      Challenge by
-      <a
-        class="attribution__link"
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a
-        class="attribution__link"
-        href="https://github.com/kens-visuals"
-        target="_blank"
-        >Kens-Visuals</a
-      >.
+        <h1 class="heading">A history of everything you copy</h1>
+        <p class="text">
+          Clipboard allows you to track and organize everything you copy.
+          Instantly access your clipboard on all your devices.
+        </p>
+
+        <div class="btn-wrapper">
+          <button class="btn btn--cyan">Download for iOS</button>
+          <button class="btn btn--blue">Download for Mac</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="snippets" aria-label="snippets">
+        <h2 class="heading">Keep track of your snippets</h2>
+        <p class="text">
+          Clipboard instantly stores any item you copy in the cloud, meaning you
+          can access your snippets immediately on all your devices. Our Mac and
+          iOS apps will help you organize everything.
+        </p>
+
+        <div class="snippets__wrapper">
+          <img
+            src="./images/image-computer.png"
+            alt=""
+            aria-hidden="true"
+            class="snippets__img"
+          />
+
+          <div class="snippets__details">
+            <div class="snippets__detail">
+              <h3 class="heading heading__secondary">Quick Search</h3>
+              <p class="text">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </div>
+
+            <div class="snippets__detail">
+              <h3 class="heading heading__secondary">iCloud Sync</h3>
+              <p class="text">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </div>
+
+            <div class="snippets__detail">
+              <h3 class="heading heading__secondary">Complete History</h3>
+              <p class="text">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="access" aria-label="access">
+        <h2 class="heading">Access Clipboard Anywhere</h2>
+        <p class="text">
+          Whether you’re on the go, or at your computer, you can access all your
+          Clipboard snippets in a few simple clicks.
+        </p>
+
+        <img
+          src="./images/image-devices.png"
+          alt=""
+          aria-hidden="true"
+          class="access__img"
+        />
+      </section>
+
+      <section class="workflow" aria-label="workflow">
+        <div class="workflow__heading">
+          <h2 class="heading">Supercharge your workflow</h2>
+          <p class="text">We’ve got the tools to boost your productivity.</p>
+        </div>
+
+        <div class="workflow__details">
+          <div class="workflow__detail">
+            <img
+              src="./images/icon-blacklist.svg"
+              alt=""
+              aria-hidden="true"
+              class="workflow__img"
+            />
+
+            <h3 class="heading heading--secondary">Create blacklists</h3>
+            <p class="text">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </div>
+
+          <div class="workflow__detail">
+            <img
+              src="./images/icon-text.svg"
+              alt=""
+              aria-hidden="true"
+              class="workflow__img"
+            />
+
+            <h3 class="heading heading--secondary">Plain text snippets</h3>
+            <p class="text">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </div>
+
+          <div class="workflow__detail">
+            <img
+              src="./images/icon-preview.svg"
+              alt=""
+              aria-hidden="true"
+              class="workflow__img"
+            />
+
+            <h3 class="heading heading--secondary">Sneak preview</h3>
+            <p class="text">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </div>
+        </div>
+
+        <div class="workflow__partners">
+          <ul class="workflow__partners-list">
+            <li class="workflow__partners-item">
+              <img
+                src="./images/logo-google.png"
+                alt="Google"
+                class="workflow__partners-img"
+              />
+            </li>
+            <li class="workflow__partners-item">
+              <img
+                src="./images/logo-ibm.png"
+                alt="IBM"
+                class="workflow__partners-img"
+              />
+            </li>
+            <li class="workflow__partners-item">
+              <img
+                src="./images/logo-microsoft.png"
+                alt="Microsoft"
+                class="workflow__partners-img"
+              />
+            </li>
+            <li class="workflow__partners-item">
+              <img
+                src="./images/logo-hp.png"
+                alt="HP"
+                class="workflow__partners-img"
+              />
+            </li>
+            <li class="workflow__partners-item">
+              <img
+                src="./images/logo-vector-graphics.png"
+                alt="Vector Graphics"
+                class="workflow__partners-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="clipboard" aria-label="clipboard">
+        <h2 class="heading">Clipboard for iOS and Mac OS</h2>
+        <p class="text">
+          Available for free on the App Store. Download for Mac or iOS, sync
+          with iCloud and you’re ready to start adding to your clipboard.
+        </p>
+
+        <div class="btn-wrapper">
+          <button class="btn btn--cyan">Download for iOS</button>
+          <button class="btn btn--blue">Download for Mac</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="./images/logo.svg" alt="copy" class="footer__logo" />
+
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">FAQs</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Contact Us</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Press Kit</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Install Guide</a>
+        </li>
+      </ul>
+
+      <p class="text">
+        Challenge by
+        <a
+          class="footer__copyright-link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="footer__copyright-link"
+          href="https://github.com/kens-visuals"
+          target="_blank"
+          >Kens-Visuals</a
+        >.
+      </p>
     </footer>
   </body>
 </html>
