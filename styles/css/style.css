@@ -217,11 +217,11 @@ body {
   flex-direction: column;
 }
 .workflow__details {
-  margin: 8rem 0;
+  margin: 5rem 0;
 }
 @media (min-width: 1140px) {
   .workflow__details {
-    margin: 0 0 8rem 0;
+    margin: 0 0 5rem 0;
     padding: 0 15rem;
     display: flex;
     align-items: baseline;
