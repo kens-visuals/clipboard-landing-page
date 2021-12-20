@@ -90,9 +90,16 @@ body {
   margin-bottom: 6.5rem;
 }
 
+.snippets {
+  margin-bottom: 19rem;
+}
 .snippets__img {
   margin: 5.5rem 0;
 }
+.access__img {
+  margin: 5.5rem 0 11rem 0;
+}
+
 .footer__copyright-link:link, .footer__copyright-link:visited {
   text-transform: uppercase;
   transition: all 0.3s;
