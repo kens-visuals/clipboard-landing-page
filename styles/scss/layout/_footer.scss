@@ -9,6 +9,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media (min-width: 1140px) {
+      padding: 0 18rem;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 15rem;
+    }
   }
 
   &__logo {
@@ -18,11 +25,24 @@
   &__list {
     text-align: center;
     margin: 5rem 0;
+
+    @media (min-width: 1140px) {
+      text-align: left;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 2rem 5rem;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-bottom: 2.5rem;
+
+      @media (min-width: 1140px) {
+        margin: 0;
+      }
     }
   }
 
@@ -42,6 +62,11 @@
       align-items: center;
       justify-content: center;
       gap: 4rem;
+
+      @media (min-width: 1140px) {
+        margin-left: auto;
+        gap: 2rem;
+      }
     }
 
     &-item {
@@ -58,6 +83,10 @@
     font-size: 1rem;
     text-align: center;
     margin: 1rem 0 0 0;
+
+    @media (min-width: 1140px) {
+      margin: 2rem 0 0 0;
+    }
   }
 
   &__copyright-link:link,
