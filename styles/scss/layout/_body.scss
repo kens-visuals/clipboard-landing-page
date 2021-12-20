@@ -50,7 +50,6 @@
 
   &__partners {
     &-list {
-      list-style: none;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -68,4 +67,5 @@
 }
 
 .clipboard {
+  margin-bottom: 17rem;
 }

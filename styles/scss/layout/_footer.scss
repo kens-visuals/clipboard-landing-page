@@ -1,20 +1,47 @@
 @use '../abstracts/index.scss' as *;
 
 .footer {
+  background-color: rgba($color-primary--dark, 0.1);
+  padding: 6rem 0 2.5rem 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   &__logo {
+    width: 5rem;
   }
 
   &__list {
+    text-align: center;
+    margin: 5rem 0;
   }
 
   &__item {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   &__link {
+    &:link,
+    &:visited {
+      color: $color-primary--dark;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
   }
 
-  &__icon {
+  &__icons {
     &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
     }
 
     &-item {
@@ -27,15 +54,21 @@
     }
   }
 
+  &__text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem 0 0 0;
+  }
+
   &__copyright-link:link,
   &__copyright-link:visited {
     text-transform: uppercase;
-    // color: ;
+    color: $color-secondary;
     transition: all 0.3s;
   }
 
   &__copyright-link:hover,
   &__copyright-link:active {
-    // color: ;
+    color: $color-secondary--darker;
   }
 }
