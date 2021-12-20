@@ -121,7 +121,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 12.3rem;
-  margin-bottom: 16rem;
+  margin-bottom: 15rem;
 }
 @media (min-width: 810px) {
   .header {
@@ -138,8 +138,11 @@ body {
   margin-bottom: 6.5rem;
 }
 
+.main > * {
+  margin-bottom: 15rem;
+}
+
 .snippets {
-  margin-bottom: 19rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,10 +257,14 @@ body {
 }
 @media (min-width: 810px) {
   .workflow__partners-list {
-    padding: 0 15rem;
     justify-content: space-around;
     flex-direction: row;
     gap: 4rem;
+  }
+}
+@media (min-width: 1140px) {
+  .workflow__partners-list {
+    padding: 0 15rem;
   }
 }
 .workflow__partners-item {
