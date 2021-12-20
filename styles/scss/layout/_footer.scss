@@ -5,10 +5,7 @@
   padding: 6rem 0 2.5rem 0;
 
   &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include d-flex;
 
     @media (min-width: 1140px) {
       padding: 0 18rem;

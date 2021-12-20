@@ -7,11 +7,9 @@
 }
 
 .snippets {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   position: relative;
+
+  @include d-flex;
 
   @media (min-width: 1140px) {
     margin-bottom: 22rem;
@@ -44,10 +42,7 @@
 
   &__detail {
     @media (min-width: 810px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      @include d-flex;
     }
 
     @media (min-width: 1140px) {
@@ -64,10 +59,9 @@
 
 .access {
   @media (min-width: 1140px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    margin-bottom: 0;
+
+    @include d-flex;
   }
 
   &__img {
@@ -98,10 +92,8 @@
   }
 
   &__detail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include d-flex;
+
     gap: 1rem;
 
     @media (min-width: 1140px) {
@@ -120,29 +112,43 @@
   }
 
   &__partners {
+    overflow: hidden;
+
+    @media (min-width: 1140px) {
+      width: 75%;
+      margin: 0 auto;
+    }
+
     &-list {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      @include d-flex;
 
       @media (min-width: 810px) {
+        width: calc(21rem * 10);
         justify-content: space-around;
         flex-direction: row;
-        gap: 4rem;
-      }
-
-      @media (min-width: 1140px) {
+        gap: 5rem;
+        animation: slide 15s linear infinite alternate;
         padding: 0 15rem;
       }
     }
 
     &-item {
       margin-bottom: 5.5rem;
-    }
 
-    &-img {
-      transform: scale(0.85);
+      @media (min-width: 810px) {
+        width: calc(21rem * 10);
+        margin-bottom: 0;
+
+        @include d-flex;
+      }
+
+      &--is-hidden {
+        display: none;
+
+        @media (min-width: 810px) {
+          display: flex;
+        }
+      }
     }
   }
 }
@@ -151,9 +157,16 @@
   margin-bottom: 17rem;
 
   @media (min-width: 1140px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include d-flex;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-15rem * 5));
   }
 }

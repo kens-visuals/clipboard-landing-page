@@ -117,7 +117,7 @@ body {
 }
 
 .header {
-  background-image: url("../../../images/bg-header-mobile.png");
+  background-image: url("./../../images/bg-header-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
   padding-top: 12.3rem;
@@ -125,7 +125,7 @@ body {
 }
 @media (min-width: 810px) {
   .header {
-    background-image: url(../../../images/bg-header-desktop.png);
+    background-image: url("./../../images/bg-header-desktop.png");
   }
 }
 .header__container {
@@ -143,11 +143,11 @@ body {
 }
 
 .snippets {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
 }
 @media (min-width: 1140px) {
   .snippets {
@@ -198,6 +198,7 @@ body {
 
 @media (min-width: 1140px) {
   .access {
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,6 +250,15 @@ body {
     max-width: 35rem;
   }
 }
+.workflow__partners {
+  overflow: hidden;
+}
+@media (min-width: 1140px) {
+  .workflow__partners {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 .workflow__partners-list {
   display: flex;
   align-items: center;
@@ -257,21 +267,34 @@ body {
 }
 @media (min-width: 810px) {
   .workflow__partners-list {
+    width: 210rem;
     justify-content: space-around;
     flex-direction: row;
-    gap: 4rem;
-  }
-}
-@media (min-width: 1140px) {
-  .workflow__partners-list {
+    gap: 5rem;
+    animation: slide 15s linear infinite alternate;
     padding: 0 15rem;
   }
 }
 .workflow__partners-item {
   margin-bottom: 5.5rem;
 }
-.workflow__partners-img {
-  transform: scale(0.85);
+@media (min-width: 810px) {
+  .workflow__partners-item {
+    width: 210rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.workflow__partners-item--is-hidden {
+  display: none;
+}
+@media (min-width: 810px) {
+  .workflow__partners-item--is-hidden {
+    display: flex;
+  }
 }
 
 .clipboard {
@@ -286,6 +309,14 @@ body {
   }
 }
 
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-75rem);
+  }
+}
 .footer {
   background-color: rgba(159, 171, 178, 0.1);
   padding: 6rem 0 2.5rem 0;
@@ -400,11 +431,11 @@ body {
 }
 .btn-wrapper {
   width: 100%;
+  gap: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2.5rem;
 }
 @media (min-width: 810px) {
   .btn-wrapper {
