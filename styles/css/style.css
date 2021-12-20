@@ -1,18 +1,125 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @forward './form';
- *   | ^^^^^^^^^^^^^^^^^
- *   '
- *   styles/scss/components/_index.scss 1:1  @use
- *   styles/scss/main.scss 4:1               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @forward './form';\a   \2502  ^^^^^^^^^^^^^^^^^\a   \2575 \a   styles/scss/components/_index.scss 1:1  @use\a   styles/scss/main.scss 4:1               root stylesheet";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: #9fabb2;
+  font-size: 1.6rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+.heading {
+  color: #4c545d;
+  font-size: 3.1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.heading--secondary {
+  font-size: 2.7rem;
+}
+.heading--tertiary {
+  font-size: 2.5rem;
+}
+
+.text {
+  text-align: center;
+  line-height: 1.7;
+  padding: 0 0.5rem;
+  margin-bottom: 4.5rem;
+}
+
+.container {
+  width: 85%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("../../../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 12.3rem;
+  margin-bottom: 16rem;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__logo {
+  margin-bottom: 6.5rem;
+}
+
+.footer__copyright-link:link, .footer__copyright-link:visited {
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.btn {
+  width: 31rem;
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: 0;
+  border-bottom: 0.3rem solid transparent;
+  border-radius: 5rem;
+  padding: 1.5rem 0;
+}
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.btn--cyan {
+  background-color: #26baa4;
+  border-bottom-color: #259d87;
+  box-shadow: rgba(38, 186, 164, 0.3) 0px 7px 29px 0px;
+}
+.btn--blue {
+  background-color: #6173ff;
+  border-bottom-color: #5364d0;
+  box-shadow: rgba(97, 115, 255, 0.3) 0px 7px 29px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

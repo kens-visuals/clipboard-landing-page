@@ -1,1 +1,20 @@
 @use '../abstracts/index.scss' as *;
+
+.header {
+  background-image: url('../../../images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 12.3rem;
+  margin-bottom: 16rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__logo {
+    margin-bottom: 6.5rem;
+  }
+}

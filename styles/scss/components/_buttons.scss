@@ -1,1 +1,33 @@
 @use '../abstracts/index.scss' as *;
+
+.btn {
+  width: 31rem;
+  color: $color-primary--light;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  border: 0;
+  border-bottom: 0.3rem solid transparent;
+  border-radius: 5rem;
+  padding: 1.5rem 0;
+
+  &-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &--cyan {
+    background-color: $color-secondary;
+    border-bottom-color: $color-secondary--darker;
+    box-shadow: rgba($color-secondary, 0.3) 0px 7px 29px 0px;
+  }
+
+  &--blue {
+    background-color: $color-tertiary;
+    border-bottom-color: $color-tertiary--darker;
+    box-shadow: rgba($color-tertiary, 0.3) 0px 7px 29px 0px;
+  }
+}
