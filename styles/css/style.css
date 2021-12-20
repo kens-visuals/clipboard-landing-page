@@ -327,6 +327,10 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.3s;
+}
+.footer__link:hover, .footer__link:active {
+  color: #26baa4;
 }
 .footer__icons-list {
   display: flex;
@@ -339,6 +343,13 @@ body {
     margin-left: auto;
     gap: 2rem;
   }
+}
+.footer__icons-icon {
+  fill: #4c545d;
+  transition: all 0.3s;
+}
+.footer__icons-icon:hover, .footer__icons-icon:active {
+  fill: #26baa4;
 }
 .footer__text {
   font-size: 1rem;
@@ -365,9 +376,15 @@ body {
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   border: 0;
+  border-top: 0.3rem solid transparent;
   border-bottom: 0.3rem solid transparent;
   border-radius: 5rem;
   padding: 1.5rem 0;
+  transition: all 0.3s;
+}
+.btn:hover, .btn:active {
+  opacity: 0.7;
+  cursor: pointer;
 }
 @media (min-width: 810px) {
   .btn {
@@ -391,12 +408,20 @@ body {
 .btn--cyan {
   background-color: #26baa4;
   border-bottom-color: #259d87;
-  box-shadow: rgba(38, 186, 164, 0.3) 0px 7px 29px 0px;
+  box-shadow: rgba(38, 186, 164, 0.5) 0px 7px 29px 0px;
+}
+.btn--cyan:hover, .btn--cyan:active {
+  border-bottom-color: transparent;
+  border-top-color: #259d87;
 }
 .btn--blue {
   background-color: #6173ff;
   border-bottom-color: #5364d0;
-  box-shadow: rgba(97, 115, 255, 0.3) 0px 7px 29px 0px;
+  box-shadow: rgba(97, 115, 255, 0.5) 0px 7px 29px 0px;
+}
+.btn--blue:hover, .btn--blue:active {
+  border-bottom-color: transparent;
+  border-top-color: #5364d0;
 }
 
 /*# sourceMappingURL=style.css.map */

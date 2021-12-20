@@ -53,6 +53,12 @@
       font-size: 1.8rem;
       font-weight: 600;
       text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-secondary;
     }
   }
 
@@ -69,13 +75,14 @@
       }
     }
 
-    &-item {
-    }
-
-    &-link {
-    }
-
     &-icon {
+      fill: $color-primary;
+      transition: all 0.3s;
+
+      &:hover,
+      &:active {
+        fill: $color-secondary;
+      }
     }
   }
 

@@ -6,9 +6,17 @@
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
   border: 0;
+  border-top: 0.3rem solid transparent;
   border-bottom: 0.3rem solid transparent;
   border-radius: 5rem;
   padding: 1.5rem 0;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 
   @media (min-width: 810px) {
     width: 23rem;
@@ -31,12 +39,24 @@
   &--cyan {
     background-color: $color-secondary;
     border-bottom-color: $color-secondary--darker;
-    box-shadow: rgba($color-secondary, 0.3) 0px 7px 29px 0px;
+    box-shadow: rgba($color-secondary, 0.5) 0px 7px 29px 0px;
+
+    &:hover,
+    &:active {
+      border-bottom-color: transparent;
+      border-top-color: $color-secondary--darker;
+    }
   }
 
   &--blue {
     background-color: $color-tertiary;
     border-bottom-color: $color-tertiary--darker;
-    box-shadow: rgba($color-tertiary, 0.3) 0px 7px 29px 0px;
+    box-shadow: rgba($color-tertiary, 0.5) 0px 7px 29px 0px;
+
+    &:hover,
+    &:active {
+      border-bottom-color: transparent;
+      border-top-color: $color-tertiary--darker;
+    }
   }
 }
