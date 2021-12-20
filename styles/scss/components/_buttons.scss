@@ -10,6 +10,10 @@
   border-radius: 5rem;
   padding: 1.5rem 0;
 
+  @media (min-width: 810px) {
+    width: 23rem;
+  }
+
   &-wrapper {
     width: 100%;
     display: flex;
@@ -17,6 +21,11 @@
     justify-content: center;
     flex-direction: column;
     gap: 2.5rem;
+
+    @media (min-width: 810px) {
+      flex-direction: row;
+      gap: 1.5rem;
+    }
   }
 
   &--cyan {

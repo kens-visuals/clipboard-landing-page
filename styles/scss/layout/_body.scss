@@ -5,6 +5,10 @@
 
 .snippets {
   margin-bottom: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   &__wrapper {
   }
@@ -17,6 +21,18 @@
   }
 
   &__detail {
+    @media (min-width: 810px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    @media (min-width: 810px) {
+      max-width: 50rem;
+    }
   }
 }
 
@@ -30,6 +46,9 @@
   margin-bottom: 11rem;
 
   &__description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__details {
@@ -48,12 +67,23 @@
     margin-bottom: 3rem;
   }
 
+  &__text {
+    @media (min-width: 810px) {
+      max-width: 50rem;
+    }
+  }
+
   &__partners {
     &-list {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
+
+      @media (min-width: 810px) {
+        flex-direction: row;
+        gap: 4rem;
+      }
     }
 
     &-item {

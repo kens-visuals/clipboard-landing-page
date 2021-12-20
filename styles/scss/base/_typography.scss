@@ -2,23 +2,28 @@
 
 .heading {
   color: $color-primary;
-  font-size: 3.1rem;
+  font-size: clamp(3.1rem, 4.5vw, 5rem);
   text-align: center;
   margin-bottom: 1.5rem;
 
   &--secondary {
-    font-size: 2.7rem;
+    font-size: clamp(2.7rem, 4vw, 3.5rem);
   }
 
   &--tertiary {
-    font-size: 2.3rem;
+    font-size: clamp(2.3rem, 4vw, 3rem);
     margin-bottom: 1rem;
   }
 }
 
 .text {
+  font-size: clamp(1.6rem, 4vw, 2rem);
   text-align: center;
   line-height: 1.7;
   padding: 0 0.5rem;
   margin-bottom: 4.5rem;
+
+  @media (min-width: 810px) {
+    padding: 0;
+  }
 }
