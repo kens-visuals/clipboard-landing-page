@@ -56,7 +56,3 @@ I liked the layout of this project, it was pretty simple and had a lot of white 
 - Frontend Mentor - [@kens-visuals](https://www.frontendmentor.io/profile/kens-visuals)
 - Codewars - [@kens_visuals](https://www.codewars.com/users/kens_visuals)
 - CodePen - [@kens-visuals](https://codepen.io/kens-visuals)
-
-```
-
-```
