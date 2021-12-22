@@ -1,19 +1,19 @@
-.wrapper {
-  opacity: 0;
-  transform: translateY(-50%);
-  transition: all 0.9s;
+// .wrapper {
+//   opacity: 0;
+//   transform: translateY(-50%);
+//   transition: all 0.9s;
 
-  &.slide-down {
-    opacity: 1;
-    transform: translateY(0);
-  }
+//   &.slide-down {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
 
-  &--img {
-    opacity: 0;
-    transition: all 0.9s;
+//   &--img {
+//     opacity: 0;
+//     transition: all 0.9s;
 
-    &.appear {
-      opacity: 1;
-    }
-  }
-}
+//     &.appear {
+//       opacity: 1;
+//     }
+//   }
+// }
