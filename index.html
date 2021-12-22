@@ -18,6 +18,8 @@
     />
     <link rel="stylesheet" type="text/css" href="styles/css/style.css" />
 
+    <script defer src="js/script.js"></script>
+
     <title>Frontend Mentor | Clipboard Landing Page</title>
   </head>
   <body>
@@ -25,13 +27,15 @@
       <div class="header__container container">
         <img src="./images/logo.svg" alt="copy" class="header__logo" />
 
-        <h1 class="heading">A history of everything you copy</h1>
-        <p class="text">
-          Clipboard allows you to track and organize everything you copy.
-          Instantly access your clipboard on all your devices.
-        </p>
+        <div class="wrapper js-wrapper">
+          <h1 class="heading">A history of everything you copy</h1>
+          <p class="text">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+        </div>
 
-        <div class="btn-wrapper">
+        <div class="btn-wrapper wrapper js-wrapper">
           <button class="btn btn--cyan">Download for iOS</button>
           <button class="btn btn--blue">Download for Mac</button>
         </div>
@@ -41,42 +45,44 @@
     <div class="container">
       <main class="main">
         <section class="snippets" aria-label="snippets">
-          <h2 class="heading heading--secondary">
-            Keep track of your snippets
-          </h2>
-          <p class="text text--secondary">
-            Clipboard instantly stores any item you copy in the cloud, meaning
-            you can access your snippets immediately on all your devices. Our
-            Mac and iOS apps will help you organize everything.
-          </p>
+          <div class="wrapper js-wrapper">
+            <h2 class="heading heading--secondary">
+              Keep track of your snippets
+            </h2>
+            <p class="text text--secondary">
+              Clipboard instantly stores any item you copy in the cloud, meaning
+              you can access your snippets immediately on all your devices. Our
+              Mac and iOS apps will help you organize everything.
+            </p>
+          </div>
 
           <div class="snippets__wrapper">
             <img
               src="./images/image-computer.png"
               alt=""
               aria-hidden="true"
-              class="snippets__img"
+              class="snippets__img wrapper--img js-img"
             />
 
             <div class="snippets__details">
-              <div class="snippets__detail">
+              <div class="snippets__detail wrapper js-wrapper">
                 <h3 class="heading heading--tertiary">Quick Search</h3>
-                <p class="snippets__text text text--tertiary">
+                <p class="snippets__text text--tertiary">
                   Easily search your snippets by content, category, web address,
                   application, and more.
                 </p>
               </div>
 
-              <div class="snippets__detail">
+              <div class="snippets__detail wrapper js-wrapper">
                 <h3 class="heading heading--tertiary">iCloud Sync</h3>
-                <p class="snippets__text text text--tertiary">
+                <p class="snippets__text text--tertiary">
                   Instantly saves and syncs snippets across all your devices.
                 </p>
               </div>
 
-              <div class="snippets__detail">
+              <div class="snippets__detail wrapper js-wrapper">
                 <h3 class="heading heading--tertiary">Complete History</h3>
-                <p class="snippets__text text text--tertiary">
+                <p class="snippets__text text--tertiary">
                   Retrieve any snippets from the first moment you started using
                   the app.
                 </p>
@@ -86,22 +92,26 @@
         </section>
 
         <section class="access" aria-label="access">
-          <h2 class="heading heading--secondary">Access Clipboard Anywhere</h2>
-          <p class="text text--secondary">
-            Whether you’re on the go, or at your computer, you can access all
-            your Clipboard snippets in a few simple clicks.
-          </p>
+          <div class="wrapper js-wrapper">
+            <h2 class="heading heading--secondary">
+              Access Clipboard Anywhere
+            </h2>
+            <p class="text text--secondary">
+              Whether you’re on the go, or at your computer, you can access all
+              your Clipboard snippets in a few simple clicks.
+            </p>
+          </div>
 
           <img
             src="./images/image-devices.png"
             alt=""
             aria-hidden="true"
-            class="access__img"
+            class="access__img wrapper--img js-img"
           />
         </section>
 
         <section class="workflow" aria-label="workflow">
-          <div class="workflow__description">
+          <div class="workflow__description wrapper js-wrapper">
             <h2 class="heading heading--secondary">
               Supercharge your workflow
             </h2>
@@ -111,7 +121,7 @@
           </div>
 
           <div class="workflow__details">
-            <div class="workflow__detail">
+            <div class="workflow__detail wrapper js-wrapper">
               <img
                 src="./images/icon-blacklist.svg"
                 alt=""
@@ -126,7 +136,7 @@
               </p>
             </div>
 
-            <div class="workflow__detail">
+            <div class="workflow__detail wrapper js-wrapper">
               <img
                 src="./images/icon-text.svg"
                 alt=""
@@ -141,7 +151,7 @@
               </p>
             </div>
 
-            <div class="workflow__detail">
+            <div class="workflow__detail wrapper js-wrapper">
               <img
                 src="./images/icon-preview.svg"
                 alt=""
@@ -254,15 +264,17 @@
         </section>
 
         <section class="clipboard" aria-label="clipboard">
-          <h2 class="heading heading--secondary">
-            Clipboard for iOS and Mac OS
-          </h2>
-          <p class="text text--secondary">
-            Available for free on the App Store. Download for Mac or iOS, sync
-            with iCloud and you’re ready to start adding to your clipboard.
-          </p>
+          <div class="wrapper js-wrapper">
+            <h2 class="heading heading--secondary">
+              Clipboard for iOS and Mac OS
+            </h2>
+            <p class="text text--secondary">
+              Available for free on the App Store. Download for Mac or iOS, sync
+              with iCloud and you’re ready to start adding to your clipboard.
+            </p>
+          </div>
 
-          <div class="btn-wrapper">
+          <div class="btn-wrapper wrapper js-wrapper">
             <button class="btn btn--cyan">Download for iOS</button>
             <button class="btn btn--blue">Download for Mac</button>
           </div>
