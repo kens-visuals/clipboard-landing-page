@@ -1,3 +1,9 @@
+.main {
+  & > * {
+    margin-bottom: 15rem;
+  }
+}
+
 .container {
   width: 85%;
   max-width: 80rem;

@@ -1,0 +1,13 @@
+@use '../abstracts/index.scss' as *;
+
+.access {
+  @media (min-width: 1140px) {
+    margin-bottom: 0;
+
+    @include d-flex;
+  }
+
+  &__img {
+    margin: 5.5rem 0 10rem 0;
+  }
+}
