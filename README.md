@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://kens-visuals.github.io/clipboard-landing-page/](https://kens-visuals.github.io/clipboard-landing-page/)
-- Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Solution URL: [https://www.frontendmentor.io/solutions/clipboard-landing-page-with-scss-bem-and-vanilla-js-5i5L0KYqw](https://www.frontendmentor.io/solutions/clipboard-landing-page-with-scss-bem-and-vanilla-js-5i5L0KYqw)
 
 ## My process
 
