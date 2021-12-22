@@ -1,6 +1,6 @@
-# Frontend Mentor - PROJECT NAME Solution
+# Frontend Mentor - Clipboard Landing Page Solution
 
-This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LINK).
+This is a solution to the [Clipboard Landing Page Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9).
 
 ## Table of contents
 
@@ -11,7 +11,6 @@ This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LI
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -21,8 +20,8 @@ This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LI
 
 Users should be able to:
 
-- OBJECTIVE_1
-- OBJECTIVE_2
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
 ### Screenshot
 
@@ -30,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Live Site URL: [https://kens-visuals.github.io/clipboard-landing-page/](https://kens-visuals.github.io/clipboard-landing-page/)
 - Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
 
 ## My process
@@ -41,41 +40,23 @@ Users should be able to:
 - SCSS custom properties
 - CSS Flexbox
 - CSS Grid
+- Vanilla JS
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I liked the layout of this project, it was pretty simple and had a lot of white space, which is one of my favorite aspects in web design. I didn't necessarily learn much, I should say that I practiced more. I practice more on scroll-in animations with JS. Again, nothing crazy, I just thought this is another great opportunity to practice some new skills and build a good fundamental knowledge about them with these simple projects.
 
 ### Useful resources
 
-- [TO_BE_UPDATED]() - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [TO_BE_UPDATED]() - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [The Auto Slider Animation](https://codepen.io/kens-visuals/pen/gOGxpmJ?editors=1100) - Check ot my CodePen to see how I did the logos' slider animation.
 
 ## Author
 
 - Frontend Mentor - [@kens-visuals](https://www.frontendmentor.io/profile/kens-visuals)
 - Codewars - [@kens_visuals](https://www.codewars.com/users/kens_visuals)
 - CodePen - [@kens-visuals](https://codepen.io/kens-visuals)
+
+```
+
+```
